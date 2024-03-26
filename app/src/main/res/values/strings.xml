@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Github User</string>
+    <string name="name">Name</string>
+    <string name="username">username</string>
+    <string name="bio">Bio</string>
+    <string name="repositories">Repositories</string>
+    <string name="followers">100 Followers</string>
+    <string name="following">100 Following</string>
+    <string name="tab_text_1">Follower</string>
+    <string name="tab_text_2">Following</string>
+    <string name="searchbar_hint">Cari User</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tv_followers">Followers</string>
+    <string name="j_followers">100</string>
+    <string name="tv_following">Following</string>
+    <string name="j_following">100</string>
+    <string name="tv_repository">Repository</string>
+    <string name="j_repo">100</string>
+</resources>
