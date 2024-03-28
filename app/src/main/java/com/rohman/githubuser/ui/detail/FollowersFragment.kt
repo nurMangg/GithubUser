@@ -17,7 +17,7 @@ import com.rohman.githubuser.ui.adapter.Adapter
 class FollowersFragment : Fragment() {
     private lateinit var adapter: Adapter
     private lateinit var recyclerView: RecyclerView
-    private val followerViewModel by viewModels<DetailViewModel>()
+    private val followerViewModel by viewModels<FollowerViewModel>()
 
     companion object {
         const val ARG_USERNAME = "username"
@@ -49,7 +49,6 @@ class FollowersFragment : Fragment() {
     private fun initRecyclerView(view: View) {
         adapter = Adapter(arrayListOf())
         recyclerView = view.findViewById(R.id.rvFollower)
-
         recyclerView.layoutManager = LinearLayoutManager(requireActivity())
         recyclerView.adapter = adapter
         recyclerView.setHasFixedSize(true)
@@ -79,10 +78,9 @@ class FollowersFragment : Fragment() {
     }
     private fun showLoading(isLoading: Boolean, view: View) {
         val progressBar: ProgressBar = view.findViewById(R.id.progressBar)
-
         progressBar.visibility = if (isLoading) View.VISIBLE else View.GONE
     }
-    private fun setUsersData(users: List<ItemsItem>) {
+    private fun setUsersData(users: ArrayList<ItemsItem>) {
         adapter.setData(users)
     }
 }

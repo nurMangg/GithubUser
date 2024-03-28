@@ -26,11 +26,11 @@ interface ApiService {
     @GET("users/{username}/following")
     fun getUserFollowings(
         @Path("username") username: String
-    ): Call<List<ItemsItem>>
+    ): Call<ArrayList<ItemsItem>>
 
     @GET("users/{username}/followers")
     fun getUserFollowers(
         @Path("username") username: String
-    ): Call<List<ItemsItem>>
+    ): Call<ArrayList<ItemsItem>>
 
 }

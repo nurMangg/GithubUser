@@ -16,4 +16,12 @@
     <string name="j_following">100</string>
     <string name="tv_repository">Repository</string>
     <string name="j_repo">100</string>
+    <string name="dark_mode">Dark Mode</string>
+
+    <string name="setting">Setting</string>
+    <string name="favorite">Favorite</string>
+    <string name="todo">TODO</string>
+    <string name="_100">100</string>
+    <string name="followerss">Followers</string>
+    <string name="followings">Following</string>
 </resources>

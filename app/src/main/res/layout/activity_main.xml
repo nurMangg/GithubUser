@@ -5,16 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.main.MainActivity">
+
     <com.google.android.material.search.SearchBar
         android:id="@+id/searchBar"
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/searchbar_hint"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
     </com.google.android.material.search.SearchBar>
+
 
     <com.google.android.material.search.SearchView
         android:id="@+id/searchView"
@@ -26,6 +28,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
     </com.google.android.material.search.SearchView>
 
     <androidx.recyclerview.widget.RecyclerView
